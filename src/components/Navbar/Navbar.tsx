@@ -10,8 +10,8 @@ const Navbar = () => {
 
   return (
     <>
-        <nav>
-        <div className="container flex justify-between items-center py-8">
+        <nav className='border-b-2 border-gray-300'>
+        <div className="container flex justify-between items-center py-5">
             {/* Logo section */}
             <div className="text-2xl flex items-center gap-2 font-bold uppercase">
                 <SiPhosphoricons />
