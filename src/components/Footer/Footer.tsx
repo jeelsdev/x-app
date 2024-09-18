@@ -3,12 +3,12 @@ import { SiPhosphoricons } from "react-icons/si"
 const Footer = () => {
     return (
         <footer>
-            <div className="flex justify-center items-start gap-20 lg:gap-40">
+            <div className="text-center lg:flex justify-center items-start gap-20 lg:gap-40">
                 <div className="flex justify-center items-center">
                     <SiPhosphoricons />
                     <p className='text-primary inline-block ml-2'>X App</p>
                 </div>
-                <div className="border-r-2 border-gray-300 h-20"></div>
+                <div className="border-r-2 border-gray-300 h-5 lg:h-20"></div>
                 <div className="">
                     <ul className="">
                         <li>
@@ -25,7 +25,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="border-r-2 border-gray-300 h-20"></div>
+                <div className="border-r-2 border-gray-300 h-5 lg:h-20"></div>
                 <div>
                     <ul className="">
                         <li>
