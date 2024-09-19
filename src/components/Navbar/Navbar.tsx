@@ -1,17 +1,32 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { NavbarMenu } from '../../mockData/data';
 import { CiSearch } from "react-icons/ci";
 import { MdMenu } from "react-icons/md";
-import { SiPhosphoricons } from "react-icons/si";
 import ResponsiveMenu from './ResponsiveMenu';
 import Logo from '../common/Logo';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            if (offset > 200) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        }
+        window.addEventListener('scroll', handleScroll)
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
 
   return (
     <>
-        <nav className='border-b-2 border-gray-300 bg-gray-100 bg-opacity-5 fixed left-0 right-0'>
+        <nav className={`border-b-2 border-gray-300 bg-white ${scrolled ? 'bg-opacity-100' : 'bg-opacity-5'} fixed left-0 right-0 z-50`}>
             <div className="container flex justify-between items-center">
                 {/* Logo section */}
                 <div className="text-2xl flex items-center gap-2 font-bold uppercase">
