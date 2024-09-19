@@ -2,7 +2,7 @@ const Logo = () => {
     return (
         <div className="text-2xl flex items-center gap-2 font-bold uppercase">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-                width="100px" height="80px" viewBox="0 0 1080.000000 1080.000000"
+                className="w-12 h-15 text-white lg:w-24 lg:h-20" viewBox="0 0 1080.000000 1080.000000"
                 preserveAspectRatio="xMidYMid meet">
 
                 <g transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)"
@@ -39,7 +39,7 @@ const Logo = () => {
                 41 -36 9 -1200 6 -1224 -4z"/>
                 </g>
             </svg>
-            <p className="text-primary">GRUPO VALGROL</p>
+            <p className="text-primary text-sm lg:text-xl">GRUPO VALGROL</p>
         </div>
     )
 }
