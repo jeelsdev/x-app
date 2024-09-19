@@ -1,12 +1,11 @@
-import { SiPhosphoricons } from "react-icons/si"
+import Logo from "../common/Logo"
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="border-t-2 border-gray-300 pt-6">
             <div className="text-center lg:flex justify-center items-start gap-20 lg:gap-40">
                 <div className="flex justify-center items-center">
-                    <SiPhosphoricons />
-                    <p className='text-primary inline-block ml-2'>X App</p>
+                    <Logo />
                 </div>
                 <div className="border-r-2 border-gray-300 h-5 lg:h-20"></div>
                 <div className="">
@@ -37,7 +36,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className='bg-gray-900 text-white text-center py-4 mt-3'>
+            <div className='text-gray-800 text-center py-4 mt-3'>
                 <p>&copy; 2024 - All rights reserved</p>
             </div>
         </footer>
