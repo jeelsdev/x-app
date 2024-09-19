@@ -6,7 +6,7 @@ import Working from "../../components/Home/Working"
 const Home = () => {
     return (
         <div className="">
-            <div className="bg-gray-300 h-screen">
+            <div className="bg-black h-screen">
                 <Video />
             </div>
             <div>
