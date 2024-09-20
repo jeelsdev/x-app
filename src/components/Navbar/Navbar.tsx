@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className={`border-b-2 border-gray-300 bg-white ${scrolled ? 'bg-opacity-100' : 'bg-opacity-5'} fixed left-0 right-0 z-50`}>
+        <nav className={`${scrolled ? 'bg-opacity-100 bg-white' : 'bg-opacity-5'} fixed left-0 right-0 z-50`}>
             <div className="container flex justify-between items-center">
                 {/* Logo section */}
                 <div className="text-2xl flex items-center gap-2 font-bold uppercase">
@@ -34,12 +34,12 @@ const Navbar = () => {
                 </div>
                 {/* Menu section */}
                 <div className="hidden md:block">
-                    <ul className="flex items-center gap-6 text-gray-600">
+                    <ul className="flex items-center gap-6 text-primary-100">
                         {
                             NavbarMenu.map((item) => {
                                 return (
                                     <li key={item.id}>
-                                        <a href={item.url} className='inline-block py-1 px-3 hover:text-primary font-semibold'>{item.title}</a>
+                                        <a href={item.url} className='inline-block py-1 px-3 hover:text-secondary-100 font-semibold'>{item.title}</a>
                                     </li>
                                 )
                             })
@@ -47,8 +47,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 {/* Icons section */}
-                <div className='flex items-center gap-4'>
-                    <button className='text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200'>
+                <div className='hidden lg:flex items-center gap-4'>
+                    <button className='text-2xl text-primary-100 hover:bg-secondary-100 hover:text-white rounded-full p-2 duration-200'>
                         <CiSearch />
                     </button>
                 </div>
@@ -57,10 +57,10 @@ const Navbar = () => {
                     <MdMenu className='text-4xl'/>
                 </div>
             </div>
-        </nav>
-
         {/* Mobile Sidebar section */}
         <ResponsiveMenu open={isOpen}/>
+        </nav>
+
     </>
   );
 };

@@ -9,16 +9,16 @@ export const NavbarMenu: Navbar[] = [
     {
         id: 2,
         title: 'Sobre nosotros',
-        url: '/about'
+        url: '#about'
     },
     {
         id: 3,
         title: 'Contacto',
-        url: '/contact'
+        url: '#contact'
     },
     {
         id: 4,
         title: 'Blogs',
-        url: '/blogs'
+        url: '#blogs'
     }
 ]
