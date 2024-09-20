@@ -1,5 +1,4 @@
 import InfoAttachment from "../../components/Home/components/InfoAttachment"
-import Timeline from "../../components/Home/components/Timeline"
 import Contact from "../../components/Home/Contact"
 import Video from "../../components/Home/Video"
 import Working from "../../components/Home/Working"
