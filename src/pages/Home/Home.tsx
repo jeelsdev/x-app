@@ -23,7 +23,7 @@ const Home = () => {
                 <InfoAttachment />
             </div>
             <div className="container py-5" id="blogs">
-                <h3 className="text-2xl font-bold text-gray-800 lg:text-3xl py-3">Nuestros productos</h3>
+                <h3 className="text-2xl font-bold text-gray-800 lg:text-3xl py-5">Nuestros proyectos</h3>
                 <Works />
             </div>
             <div className="my-10 mx-5 md:mx-1" id="contact">

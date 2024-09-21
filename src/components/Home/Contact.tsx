@@ -1,6 +1,6 @@
 const Contact = () => {
     return (
-        <section className="bg-blue-50">
+        <section className="bg-white">
             <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
                 <div className="mb-4">
                     <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
@@ -8,14 +8,14 @@ const Contact = () => {
                             className="font-heading mb-4 font-bold tracking-tight text-primary-100 text-3xl sm:text-5xl">
                             Contacto
                         </h2>
-                        <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">Pongámonos
+                        <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600">Pongámonos
                         en contacto.</p>
                     </div>
                 </div>
                 <div className="flex items-stretch justify-center">
                     <div className="grid md:grid-cols-2">
                         <div className="h-full pr-6">
-                            <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
+                            <p className="mt-3 mb-12 text-lg text-gray-600">
                                 className aptent taciti sociosqu ad
                                 litora torquent per conubia nostra, per inceptos himenaeos. Duis nec ipsum orci. Ut scelerisque
                                 sagittis ante, ac tincidunt sem venenatis ut.
@@ -94,7 +94,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="text-center">
-                                    <button type="button" className="w-full bg-primary-100 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Enviar mensaje</button>
+                                    <button type="button" className="w-full bg-secondary-100 hover:bg-secondary-200 text-white px-6 py-3 font-xl rounded-md sm:mb-0">Enviar mensaje</button>
                                 </div>
                             </form>
                         </div>
