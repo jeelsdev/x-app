@@ -10,7 +10,7 @@ const Home = () => {
             <div className="bg-black h-screen">
                 <Video />
             </div>
-            <div id="about">
+            <div id="about" className="container">
                 <Working />
             </div>
             <div>
