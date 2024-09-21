@@ -1,5 +1,6 @@
 import InfoAttachment from "../../components/Home/components/InfoAttachment"
 import Contact from "../../components/Home/Contact"
+import Info from "../../components/Home/Info"
 import Video from "../../components/Home/Video"
 import Working from "../../components/Home/Working"
 import Works from "../../components/Home/Works"
@@ -9,6 +10,11 @@ const Home = () => {
         <div className="">
             <div className="bg-black h-screen">
                 <Video />
+            </div>
+            <div className="w-full flex justify-center">
+                <div className="bg-white shadow-lg rounded-sm text-center text-black py-10 w-4/5 -m-20 lg:-m-10 relative max-w-screen-xl">
+                    <Info />
+                </div>
             </div>
             <div id="about" className="container">
                 <Working />
