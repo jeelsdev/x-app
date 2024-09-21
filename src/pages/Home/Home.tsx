@@ -1,3 +1,4 @@
+import Whatsapp from "../../components/common/Whatsapp"
 import InfoAttachment from "../../components/Home/components/InfoAttachment"
 import Contact from "../../components/Home/Contact"
 import Info from "../../components/Home/Info"
@@ -30,6 +31,7 @@ const Home = () => {
                 {/* <Timeline /> */}
                 <Contact />
             </div>
+            <Whatsapp />
         </div>
     )
 }
